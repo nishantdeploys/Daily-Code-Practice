@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -22,3 +23,11 @@ int main(){
 
     cout<<checkIsSubstring(str1,str2);
 }
+=======
+#include<iostream>
+using namespace std;
+int main(){
+    cout<<"Jai Shree Ram";
+    return 0;
+}
+>>>>>>> origin/master
