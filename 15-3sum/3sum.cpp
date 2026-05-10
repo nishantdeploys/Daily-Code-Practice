@@ -4,10 +4,10 @@ public:
         vector<vector<int>> result;
         int n = nums.size();
         
-        sort(nums.begin(), nums.end());  // Step 1: sort array
-        
+        sort(nums.begin(), nums.end());  
+
         for(int i = 0; i < n - 2; i++) {
-            // Skip duplicates for i
+        
             if(i > 0 && nums[i] == nums[i - 1]) continue;
             
             int left = i + 1;
@@ -19,7 +19,6 @@ public:
                 if(sum == 0) {
                     result.push_back({nums[i], nums[left], nums[right]});
                     
-                    // Skip duplicates for left and right
                     while(left < right && nums[left] == nums[left + 1]) left++;
                     while(left < right && nums[right] == nums[right - 1]) right--;
                     
