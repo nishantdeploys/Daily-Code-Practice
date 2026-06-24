@@ -9,7 +9,7 @@ public:
 
         for(int n:nums){
             sum += n;
-            if(mp.contains(sum - k))
+            if(mp.find(sum - k) != mp.end())
                 ans += mp[sum-k];
             mp[sum]++;
         }
