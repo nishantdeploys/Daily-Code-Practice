@@ -8,6 +8,8 @@ public:
                 count ++;
             }
         }
+        // cout << count << endl;
         return count <= 1;
+
     }
 };
